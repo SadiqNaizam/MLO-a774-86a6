@@ -4,89 +4,88 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 17PERCENT 95PERCENT; /* Light Gray #F3F4F6 */
+    --foreground: 215 9PERCENT 47PERCENT; /* Dark Gray #6B7280 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0PERCENT 100PERCENT; /* White #FFFFFF */
+    --card-foreground: 215 9PERCENT 47PERCENT; /* Dark Gray #6B7280 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0PERCENT 100PERCENT; /* White #FFFFFF */
+    --popover-foreground: 215 9PERCENT 47PERCENT; /* Dark Gray #6B7280 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 170 80PERCENT 40PERCENT; /* Teal #14B8A6 */
+    --primary-foreground: 0 0PERCENT 100PERCENT; /* White #FFFFFF */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 14PERCENT 90PERCENT; /* Lighter Gray #E5E7EB */
+    --secondary-foreground: 170 80PERCENT 40PERCENT; /* Teal #14B8A6 for text on secondary */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 20PERCENT 97PERCENT; /* Very Light Gray #F9FAFB */
+    --muted-foreground: 215 9PERCENT 55PERCENT; /* Medium Gray */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 22 93PERCENT 49PERCENT; /* Orange #EF5E0A */
+    --accent-foreground: 0 0PERCENT 100PERCENT; /* White #FFFFFF */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2PERCENT 60.2PERCENT; /* Keeping existing red */
+    --destructive-foreground: 210 40PERCENT 98PERCENT; /* Keeping existing white */
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13PERCENT 83PERCENT; /* Light Gray #D1D5DB */
+    --input: 220 13PERCENT 83PERCENT; /* Light Gray #D1D5DB */
+    --ring: 22 93PERCENT 49PERCENT; /* Accent Orange #EF5E0A for focus */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* 8px, as per design */
 
-    --sidebar-background: 0 0% 98%;
+    /* Font */
+    --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar Light Mode */
+    --sidebar-background: 0 0PERCENT 100PERCENT; /* White */
+    --sidebar-foreground: 215 9PERCENT 47PERCENT; /* Main text color */
+    --sidebar-primary: 170 80PERCENT 40PERCENT; /* Main primary (Teal) */
+    --sidebar-primary-foreground: 0 0PERCENT 100PERCENT; /* White */
+    --sidebar-accent: 22 93PERCENT 49PERCENT; /* Main accent (Orange) */
+    --sidebar-accent-foreground: 0 0PERCENT 100PERCENT; /* White */
+    --sidebar-border: 220 14PERCENT 90PERCENT; /* Lighter Gray #E5E7EB */
+    --sidebar-ring: 22 93PERCENT 49PERCENT; /* Main accent (Orange) */
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 215 39PERCENT 11PERCENT; /* Dark Charcoal #111827 */
+    --foreground: 220 17PERCENT 95PERCENT; /* Light Gray #F3F4F6 (from light bg) */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 217 30PERCENT 17PERCENT; /* Darker Gray #1F2937 */
+    --card-foreground: 220 17PERCENT 95PERCENT; /* Light Gray */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 217 30PERCENT 17PERCENT; /* Darker Gray #1F2937 */
+    --popover-foreground: 220 17PERCENT 95PERCENT; /* Light Gray */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 170 70PERCENT 70PERCENT; /* Lighter Teal */
+    --primary-foreground: 215 30PERCENT 15PERCENT; /* Dark Gray for text on Lighter Teal */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 216 15PERCENT 27PERCENT; /* Medium Dark Gray #374151 */
+    --secondary-foreground: 170 70PERCENT 75PERCENT; /* Lighter Teal for text on dark secondary */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 216 15PERCENT 27PERCENT; /* Medium Dark Gray #374151 */
+    --muted-foreground: 220 15PERCENT 65PERCENT; /* Medium Light Gray */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 25 95PERCENT 60PERCENT; /* Brighter Orange for Dark Mode #FC9644 */
+    --accent-foreground: 0 0PERCENT 10PERCENT; /* Very Dark Gray/Black for text on Brighter Orange */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70PERCENT 50PERCENT; /* Adjusted Red for Dark Mode */
+    --destructive-foreground: 0 0PERCENT 100PERCENT; /* White */
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217 14PERCENT 34PERCENT; /* Medium Dark Gray #4B5563 */
+    --input: 217 14PERCENT 34PERCENT; /* Medium Dark Gray #4B5563 */
+    --ring: 25 95PERCENT 60PERCENT; /* Dark Mode Accent Orange for focus */
+
+    /* Sidebar Dark Mode */
+    --sidebar-background: 217 30PERCENT 15PERCENT; /* Slightly darker than dark card */
+    --sidebar-foreground: 220 17PERCENT 95PERCENT; /* Main dark foreground */
+    --sidebar-primary: 170 70PERCENT 70PERCENT; /* Main dark primary (Lighter Teal) */
+    --sidebar-primary-foreground: 215 30PERCENT 15PERCENT; /* Dark Gray */
+    --sidebar-accent: 25 95PERCENT 60PERCENT; /* Main dark accent (Brighter Orange) */
+    --sidebar-accent-foreground: 0 0PERCENT 10PERCENT; /* Very Dark Gray/Black */
+    --sidebar-border: 216 15PERCENT 27PERCENT; /* Medium Dark Gray #374151 */
+    --sidebar-ring: 25 95PERCENT 60PERCENT; /* Main dark accent (Brighter Orange) */
   }
 }
 
@@ -97,5 +96,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
   }
 }
